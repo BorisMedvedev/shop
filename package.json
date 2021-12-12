@@ -1,0 +1,36 @@
+{
+  "name": "start_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Medvedev Boris",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "choices.js": "^9.0.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.6.0",
+    "mixitup": "^3.3.1",
+    "normalize.css": "^8.0.1",
+    "rateyo": "^2.3.2",
+    "sass": "^1.43.4",
+    "simplebar": "^5.3.6",
+    "swiper": "^7.3.0"
+  },
+  "dependencies": {
+    "trim-newlines": "^4.0.2"
+  }
+}
