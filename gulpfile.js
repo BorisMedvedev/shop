@@ -95,7 +95,7 @@ function styles() {
 
 function build() {
   return src(["app/**/*.html",
-    "app/css/style.min.css",
+    "app/css/style.css",
     "app/fonts/**/*",
     "app/images/**/*",
     "app/js/main.min.js"], {
