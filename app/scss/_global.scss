@@ -30,13 +30,18 @@ body {
   color: $default;
 }
 
+
 img {
   object-fit: contain;
   max-width: 100%;
   display: block;
 }
 
-button {
+address {
+  font-style: normal;
+}
+
+.btn-reset {
   padding: 0;
   background-color: transparent;
   border: transparent;
@@ -44,8 +49,8 @@ button {
   cursor: pointer;
 }
 
-address {
-  font-style: normal;
+.main {
+  flex-grow: 1;
 }
 
 .list-reset {
