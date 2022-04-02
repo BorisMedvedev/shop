@@ -28,7 +28,8 @@
     "rateyo": "^2.3.2",
     "sass": "^1.43.4",
     "simplebar": "^5.3.6",
-    "swiper": "^7.3.0"
+    "slick-carousel": "^1.8.1"
+    
   },
   "dependencies": {
     "trim-newlines": "^4.0.2"

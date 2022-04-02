@@ -1,6 +1,6 @@
+@import "libs";
 @import "fonts";
 @import "vars";
-@import "libs";
 @import "global";
 @import "mixins";
 
@@ -176,12 +176,13 @@
 
   &__form-input {
     padding: 15px 17px;
+    margin-right: 10px;
     height: 50px;
-    max-width: 318px;
+    max-width: 309px;
     width: 100%;
     border: none;
     background-color: #fff;
-    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.1);
   }
 }
 
@@ -205,5 +206,88 @@
 
   &__accept-img:not(:last-child) {
     margin-right: 25px;
+  }
+}
+
+.top-slider {
+  padding-top: 65px;
+  background-image: url("../images/bg/bg.png");
+  background-color: $bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    max-width: 1560px;
+  }
+
+  &__content {
+    padding-left: 177px;
+  }
+
+  &__item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-size: 58px;
+    font-weight: 700;
+    font-family: "roboto", sans-serif;
+    color: $title;
+  }
+
+  &__discription p {
+    max-width: 485px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    bottom: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      button {
+        position: relative;
+        font-size: 0;
+        border: 2px solid transparent;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50px;
+          background-color: $default;
+        }
+      }
+    }
+    .slick-active {
+      border: 2px solid $accent;
+      border-radius: 50px;
+    }
+
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
