@@ -30,7 +30,6 @@ body {
   color: $default;
 }
 
-
 img {
   object-fit: contain;
   max-width: 100%;
@@ -47,10 +46,6 @@ address {
   border: transparent;
   color: inherit;
   cursor: pointer;
-}
-
-.main {
-  flex-grow: 1;
 }
 
 .list-reset {
@@ -113,6 +108,7 @@ address {
   transition: color 0.2s;
   outline: 0;
   z-index: 1;
+  transition: all 0.2s;
 
   &:focus {
     &::after {
@@ -120,15 +116,34 @@ address {
       position: absolute;
       width: 120%;
       height: 150%;
-      background-color: #7943a4;
+      background-color: rgba(255, 17, 48, 0.1);
       z-index: -1;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
   }
+  &:hover {
+    color: $accent;
+  }
 
-  &:active {
+  &:active::after {
     background-color: transparent;
+  }
+}
+
+.btn-accent {
+  padding: 14px 25px;
+  background-color: $accent;
+  font-weight: 400;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  &:hover {
+    background-color: #fff;
+    border-color: $accent;
+    color: $title;
   }
 }

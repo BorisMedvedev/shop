@@ -30,8 +30,7 @@
     color: $title;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
-    transition: color 0.2s,
-      border-color 0.2s;
+    transition: color 0.2s, border-color 0.2s;
 
     &:focus {
       color: $accent;
@@ -42,9 +41,7 @@
       color: $accent;
       border-bottom: 2px solid $accent;
     }
-
   }
-
 }
 
 .user-nav {
@@ -59,7 +56,12 @@
     background-repeat: no-repeat;
     background-size: content;
     background-position: center;
+    transition: filter 0.2s;
 
+    &:hover {
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
+        brightness(100%) contrast(101%);
+    }
 
     &--active {
       color: $accent;
@@ -70,21 +72,21 @@
     }
 
     &--user {
-      background-image: url('../images/sprite.svg#user');
+      background-image: url("../images/sprite.svg#user");
     }
 
     &--heart-icon {
-      background-image: url('../images/sprite.svg#heart-icon');
+      background-image: url("../images/sprite.svg#heart-icon");
     }
 
     &--search {
       width: 22px;
       height: 22px;
-      background-image: url('../images/sprite.svg#search');
+      background-image: url("../images/sprite.svg#search");
     }
 
     &--cart {
-      background-image: url('../images/sprite.svg#cart');
+      background-image: url("../images/sprite.svg#cart");
     }
   }
 
@@ -128,7 +130,6 @@
     &-item {
       margin-right: 16px;
     }
-
   }
 
   &__contacts {
@@ -138,7 +139,7 @@
   }
 
   &__nav {
-    max-width: 165px;
+    max-width: 169px;
     width: 100%;
     margin-right: 30px;
   }
@@ -174,24 +175,13 @@
   }
 
   &__form-input {
-    margin-right: 10px;
     padding: 15px 17px;
     height: 50px;
-    max-width: 320px;
+    max-width: 318px;
     width: 100%;
     border: none;
     background-color: #fff;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
-  }
-
-  &__form-btn {
-    padding: 15px 20px;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: "roboto";
-    background-color: $accent;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-
   }
 }
 
