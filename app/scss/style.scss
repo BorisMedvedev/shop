@@ -59,7 +59,8 @@
     transition: filter 0.2s;
 
     &:hover {
-      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg) brightness(100%) contrast(101%);
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
+        brightness(100%) contrast(101%);
     }
 
     &--active {
@@ -388,7 +389,8 @@
       background-image: url("../images/sprite.svg#decor1");
       background-repeat: no-repeat;
       background-size: cover;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
+        brightness(101%) contrast(102%);
       z-index: -1;
     }
 
@@ -403,7 +405,8 @@
       background-image: url("../images/sprite.svg#decor2");
       background-repeat: no-repeat;
       background-size: cover;
-      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg) brightness(98%) contrast(111%);
+      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
+        brightness(98%) contrast(111%);
       z-index: -1;
     }
   }
@@ -436,7 +439,8 @@
         background-image: url("../images/sprite.svg#avto-icon");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg) brightness(103%) contrast(102%);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg)
+          brightness(103%) contrast(102%);
       }
     }
 
@@ -455,7 +459,8 @@
         background-image: url("../images/sprite.svg#dayicon");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg) brightness(103%) contrast(102%);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg)
+          brightness(103%) contrast(102%);
       }
     }
 
@@ -657,6 +662,7 @@
 }
 
 .product-card {
+  position: relative;
   max-width: 370px;
   width: 100%;
   outline: 1px solid $default;
@@ -668,19 +674,61 @@
     outline: transparent;
   }
 
-
-
-
   &__info {
     padding: 20px;
     text-align: center;
   }
 
   &__rateyo {
-    margin: 0 auto;
+    margin: 0 auto 15px;
+  }
+
+  &__title {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    font-family: "roboto", sans-serif;
+    color: $title;
+    line-height: 1.182;
   }
 }
 
+.box-navigation {
+  &__user {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    padding: 20px 60px 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s, box-shadow 0.3s;
+  }
+
+  &__itmem {
+    width: 30px;
+    height: 30px;
+
+    &__link {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.product-card:hover .box-navigation__user {
+  pointer-events: auto;
+  opacity: 1;
+}
+.box-navigation__user:hover {
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
 // .blog {
 //   &__description p {
 //     display: block;
