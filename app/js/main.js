@@ -10,4 +10,11 @@ $(function () {
 
   });
 
+  $(".rateyo").rateYo({
+    starWidth: "40px"
+  }
+
+  );
+
+
 });
