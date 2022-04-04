@@ -702,6 +702,22 @@
   opacity: 1;
 }
 
+.badge-discount {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  padding: 8px 10px;
+  background-color: $accent;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.25);
+  display: none;
+
+  &__active {
+    display: inline-block;
+  }
+}
+
 .box-navigation {
   &__user {
     position: absolute;
@@ -758,6 +774,7 @@
   &__link {
     width: 30px;
     height: 30px;
+
     &--bascet {
       background-image: url("../images/sprite.svg#bascet");
     }
@@ -770,6 +787,7 @@
     background-color: transparent;
     color: $title;
     transition: color 0.2s, background-color 0.2s;
+
     &:hover {
       background-color: $accent;
       color: #fff;
@@ -777,19 +795,73 @@
   }
 }
 
-.badge-discount {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  padding: 8px 10px;
-  background-color: $accent;
-  color: #fff;
-  text-transform: uppercase;
-  box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.25);
-  display: none;
+.deal-day {
+  background-color: $bg;
 
-  &__active {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitle {
     display: inline-block;
+    font-size: 22px;
+    color: $accent;
+    text-transform: uppercase;
+    line-height: 1.182;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__clock {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__days {
+    font-size: 48px;
+    font-family: "roboto", sans-serif;
+    color: $title;
+    font-weight: 700;
+    line-height: 0.5;
+    text-align: center;
+  }
+
+  &__smalltext {
+    font-family: "roboto", sans-serif;
+    color: $title;
+    font-weight: 700;
+  }
+
+  &__clock-item {
+    padding: 34px 34px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
+    width: 120px;
+    height: 120px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.partners {
+  padding-top: 120px;
+  background-color: #fff;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -825,6 +897,7 @@
     height: 400px;
   }
 }
+
 .video--active {
   display: block;
 }
