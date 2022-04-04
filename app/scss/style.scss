@@ -655,6 +655,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 35px;
 
   &__item {
     margin-bottom: 25px;
@@ -668,6 +669,10 @@
   outline: 1px solid $bg;
   cursor: pointer;
   transition: box-shadow 0.3s, outline 1s;
+
+  &__img {
+    background-size: contain;
+  }
 
   &:hover {
     box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.2);
@@ -691,58 +696,103 @@
     line-height: 1.182;
   }
 }
+
+.product-card:hover .box-navigation__user {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .box-navigation {
   &__user {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 250px;
+
+    max-width: 60%;
     width: 100%;
-    padding: 20px 60px 10px;
+    padding: 10px 40px;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
     background-color: #fff;
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s, box-shadow 0.3s;
+    z-index: 99;
   }
 
-  &__itmem {
+  &__user:hover {
+    opacity: 1;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  }
+
+  &__item {
+    position: relative;
     width: 30px;
     height: 30px;
 
-    &__link {
-      width: 30px;
+    &--aftor::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 1px;
+      width: 1px;
+      left: -14px;
       height: 30px;
+      background-color: $default;
+    }
+
+    &--aftor::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 1px;
+      width: 1px;
+      right: -14px;
+      height: 30px;
+      background-color: $default;
+    }
+  }
+
+  &__link {
+    width: 30px;
+    height: 30px;
+    &--bascet {
+      background-image: url("../images/sprite.svg#bascet");
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid $accent;
+    background-color: transparent;
+    color: $title;
+    transition: color 0.2s, background-color 0.2s;
+    &:hover {
+      background-color: $accent;
+      color: #fff;
     }
   }
 }
 
-.product-card:hover .box-navigation__user {
-  pointer-events: auto;
-  opacity: 0.7;
-}
-.box-navigation__user:hover {
-  opacity: 1;
-  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-}
-
 .badge-discount {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  padding: 5px 20px;
+  top: 25px;
+  left: 25px;
+  padding: 8px 10px;
   background-color: $accent;
   color: #fff;
   text-transform: uppercase;
+  box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.25);
   display: none;
+
   &__active {
     display: inline-block;
   }
 }
+
 .blog {
   &__description p {
     display: block;
@@ -768,8 +818,13 @@
   transform: translate(-50%, -50%);
   background-color: #34c3ff;
   z-index: 999;
+  display: none;
+
   &__inner {
     width: 600px;
     height: 400px;
   }
+}
+.video--active {
+  display: block;
 }
