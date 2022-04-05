@@ -1,22 +1,24 @@
 $(function () {
-
-  $('.top-slider__list').slick({
-    dots: true,
-    arrows: false,
-    fade: true,
-    // autoplay: true,
-    // autoplaySpeed: 3000
+  $(window).on('load', function () {
+    $('.top-slider__list').slick({
+      dots: true,
+      arrows: false,
+      fade: true,
+      // autoplay: true,
+      // autoplaySpeed: 3000
+    });
 
   });
 
-  $('.partners__list').slick({
-    dots: false,
-    arrows: false,
-    slidesToShow: 5.5,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000
-
+  $(window).on('load', function () {
+    $('.partners__list').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 5.5,
+      slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 3000
+    });
   });
 
   $(".rateyo").rateYo({
