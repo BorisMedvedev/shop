@@ -667,6 +667,7 @@
   max-width: 370px;
   width: 100%;
   outline: 1px solid $default;
+  background-color: #fff;
   cursor: pointer;
   transition: box-shadow 0.3s, outline 1s;
 
@@ -865,7 +866,7 @@
 
 .partners {
   font-size: 0;
-  padding-top: 120px;
+  padding: 120px 0 20px;
   background-color: #fff;
 
   &__list {
@@ -896,6 +897,63 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      right: -81px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url("../images/sprite.svg#decor3");
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
+        brightness(98%) contrast(111%);
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    &--decor {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -49px;
+        right: -40px;
+        display: block;
+        width: 126px;
+        height: 100px;
+        background-image: url("../images/sprite.svg#decor2");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
+          brightness(98%) contrast(111%);
+        z-index: -1;
+      }
+    }
+
+    &--decor1 {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 34%;
+        left: -180px;
+        display: block;
+        width: 140px;
+        height: 140px;
+        background-image: url("../images/sprite.svg#decor4");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
+          brightness(101%) contrast(102%);
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -913,6 +971,11 @@
     position: relative;
     padding-left: 30px;
     color: $default;
+    transition: filter 0.2s, color 0.2s;
+    &:hover {
+      color: $accent;
+    }
+
     &--lk::before {
       content: "";
       position: absolute;
@@ -925,7 +988,14 @@
       background-size: contain;
       filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
         brightness(101%) contrast(102%);
+      transition: filter 0.2s, color 0.2s;
     }
+
+    &:hover::before {
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
+        brightness(100%) contrast(101%);
+    }
+
     &--date::before {
       content: "";
       position: absolute;
@@ -974,6 +1044,7 @@
       background-size: contain;
       filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
         brightness(101%) contrast(102%);
+      transition: filter 0.2s, color 0.2s;
     }
 
     &:hover {
