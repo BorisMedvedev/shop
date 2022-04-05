@@ -666,7 +666,7 @@
   position: relative;
   max-width: 370px;
   width: 100%;
-  outline: 1px solid $bg;
+  outline: 1px solid $default;
   cursor: pointer;
   transition: box-shadow 0.3s, outline 1s;
 
@@ -796,7 +796,11 @@
 }
 
 .deal-day {
-  background-color: $bg;
+  margin-left: -5px;
+  padding: 160px 0 0;
+  background-image: url("../images/bg/bg-deay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__wrapper {
     display: flex;
@@ -814,6 +818,7 @@
   }
 
   &__inner {
+    margin-left: auto;
     text-align: center;
   }
 
@@ -852,16 +857,26 @@
       margin-right: 30px;
     }
   }
+
+  &__btn {
+    margin-bottom: 160px;
+  }
 }
 
 .partners {
+  font-size: 0;
   padding-top: 120px;
   background-color: #fff;
 
   &__list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+
+  &__item img {
+    margin: 0;
   }
 }
 
@@ -877,8 +892,99 @@
   &__text {
     @include line-clamp(2);
   }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+.blog-card {
+  max-height: 475px;
+  &__box-info {
+    padding: 30px 20px;
+  }
+
+  &__date {
+    margin-bottom: 10px;
+  }
+
+  &__span {
+    position: relative;
+    padding-left: 30px;
+    color: $default;
+    &--lk::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-image: url("../images/sprite.svg#user");
+      background-size: contain;
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
+        brightness(101%) contrast(102%);
+    }
+    &--date::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-image: url("../images/sprite.svg#blog-clock");
+      background-size: contain;
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
+        brightness(101%) contrast(102%);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "roboto", sans-serif;
+    color: $title;
+    line-height: 1.4;
+    @include line-clamp(2);
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    position: relative;
+    padding-right: 30px;
+    transition: filter 0.2s, color 0.2s;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 6px;
+      display: block;
+      width: 19px;
+      height: 9px;
+      background-repeat: no-repeat;
+      background-image: url("../images/sprite.svg#arrow");
+      background-size: contain;
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
+        brightness(101%) contrast(102%);
+    }
+
+    &:hover {
+      color: $accent;
+    }
+    &:hover::after {
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
+        brightness(100%) contrast(101%);
+    }
+  }
+}
 .video {
   position: fixed;
   padding: 85px;

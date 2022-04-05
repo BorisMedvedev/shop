@@ -9,6 +9,16 @@ $(function () {
 
   });
 
+  $('.partners__list').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 5.5,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 3000
+
+  });
+
   $(".rateyo").rateYo({
     starWidth: "16px",
     "rating": 2.2,
@@ -70,7 +80,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 29 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 
 
