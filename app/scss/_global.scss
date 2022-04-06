@@ -54,6 +54,10 @@ address {
   list-style: none;
 }
 
+.site{
+  overflow: hidden;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -158,4 +162,12 @@ address {
 
 .section-page {
   padding: 120px 0;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content--active {
+  display: block;
 }

@@ -24,7 +24,7 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a class="logo" href="#">
+      <a class="logo" href="/">
         <img src="images/logo.png" width="183" height="30" alt="logo" />
       </a>
 
@@ -75,34 +75,99 @@
 </header>
 
 <main class="main">
+  <section class="top">
 
+  <div class="top__container" style="background-image: url('images/image-bg.jpg');">
+    <div class="container">
+      <h2 class="top__title title">
+        Авторизация
+      </h2>
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list list-reset">
+
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--home" href="/">
+              Главная
+            </a>
+          </li>
+
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Авторизация
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="container">
+
+    <div class="registration">
+      <div class="registration__tabs tabs-wrapper">
+        <div class="mobile-overflow">
+          <a class="registration__tabs-btn tab tab--active" href="#tab-1">регистрация</a>
+          <a class=" registration__tabs-btn tab" href="#tab-2">вход</a>
+        </div>
+      </div>
+      <div class="registration__content">
+        <div id="tab-1" class="registration__content-item tabs-content tabs-content--active">
+          <form class="form-enter">
+            <label class="form-enter__label">
+              <span class="form-enter__span">Имя пользователя или адрес электронной почты*</span>
+              <input class="form-enter__input" type="text">
+            </label>
+            <label class="form-enter__label">
+              <span class="form-enter__span">пароль*</span>
+              <input class="form-enter__input" type="password">
+            </label>
+            <label class="form-enter__checkbox">
+              <input class="form-enter__check" type="checkbox">
+              <span class="form-enter__check-span">Помнишь меня</span>
+            </label>
+            <button class="form-enter__btn btn-reset">регистрация</button>
+            <a href="#">Потеряли свой пароль?</a>
+          </form>
+        </div>
+        <div id="tab-2" class="registration__content-item tabs-content">
+          <form class="form-enter">
+            <label class="form-enter__label">
+              <span class="form-enter__span">Имя пользователя или адрес электронной почты*</span>
+              <input class="form-enter__input" type="text">
+            </label>
+            <label class="form-enter__label">
+              <span class="form-enter__span">пароль*</span>
+              <input class="form-enter__input" type="password">
+            </label>
+            <label class="form-enter__checkbox">
+              <input class="form-enter__check" type="checkbox">
+              <span class="form-enter__check-span">Помнишь меня</span>
+            </label>
+            <button class="form-enter__btn btn-reset">войти</button>
+            <a href="#">Потеряли свой пароль?</a>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
 
 
 </main>
 
-<div class="container">
-
-  <div class="video">
-
-
-    <div class="video__inner">
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/tZJWp1ivnQ4" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-
-
-
-
-</div>
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-top__item footer-top__contacts">
-        <a class="logo footer-top__logo" href="#">
+        <a class="logo footer-top__logo" href="/">
           <img src="images/logo.png" width="183" height="30" alt="logo" />
         </a>
         <address class="footer-top__value" href="#">
