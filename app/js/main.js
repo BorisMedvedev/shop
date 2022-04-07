@@ -4,8 +4,7 @@ $(function () {
       dots: true,
       arrows: false,
       fade: true,
-      // autoplay: true,
-      // autoplaySpeed: 3000
+      cssEase: 'linear',
     });
 
   });
@@ -14,10 +13,39 @@ $(function () {
     $('.partners__list').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 5.5,
+      slidesToShow: 6,
       slidesToScroll: 1,
-      // autoplay: true,
-      // autoplaySpeed: 3000
+
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+          }
+        }
+
+      ]
     });
   });
 

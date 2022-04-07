@@ -1,8 +1,8 @@
+@import "vars";
+@import "mixins";
 @import "libs";
 @import "fonts";
-@import "vars";
 @import "global";
-@import "mixins";
 
 .header {
   padding: 35px 0 35px;
@@ -15,6 +15,9 @@
 }
 
 .menu {
+  @include r(968) {
+    display: none;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +47,18 @@
   }
 }
 
+.title {
+  @include r(440) {
+    font-size: 32px;
+  }
+}
+
 .user-nav {
   display: flex;
   padding-right: 14px;
+  @include r(440) {
+    display: none;
+  }
 
   &__link {
     position: relative;
@@ -212,6 +224,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   &__copy {
     font-size: 12px;
@@ -409,6 +422,9 @@
       filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
         brightness(98%) contrast(111%);
       z-index: -1;
+      @include r(440) {
+        left: 0;
+      }
     }
   }
 
@@ -520,6 +536,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+    @include r(1024) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 20px;
+    }
   }
 
   &__item {
@@ -917,6 +940,9 @@
       filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
         brightness(98%) contrast(111%);
       z-index: -1;
+      @include r(440) {
+        left: 0;
+      }
     }
   }
 
@@ -939,6 +965,9 @@
         filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
           brightness(98%) contrast(111%);
         z-index: -1;
+        @include r(440) {
+          right: 0;
+        }
       }
     }
 
@@ -1201,5 +1230,11 @@
     padding: 20px;
     color: #fff;
     text-transform: uppercase;
+  }
+}
+
+.title {
+  @include r(440) {
+    font-size: 36px;
   }
 }

@@ -3,9 +3,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  @else {
+  } @else {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -14,10 +12,8 @@
   }
 }
 
-
-
 @mixin responsive-ratio($x, $y, $pseudo: false) {
-  $padding: unquote(($y / $x) * 100 + '%');
+  $padding: unquote(($y / $x) * 100 + "%");
 
   @if $pseudo {
     &::before {
@@ -25,29 +21,23 @@
       width: 100%;
       padding-top: $padding;
     }
-  }
-
-  @else {
+  } @else {
     padding-top: $padding;
   }
 }
 
-
-
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
 }
 
-
-
-
-
-$breakpoints: ("phone": 560px,
+$breakpoints: (
+  "phone": 560px,
   "tablet": 768px,
   "tablet-2": 992px,
-  "desktop": 1230px);
+  "desktop": 1230px,
+);
 
 @mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {
@@ -60,5 +50,11 @@ $breakpoints: ("phone": 560px,
     @media only screen and (#{$type}-width: $width) {
       @content;
     }
+  }
+}
+
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
   }
 }
