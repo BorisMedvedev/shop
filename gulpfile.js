@@ -11,16 +11,14 @@ const svgSprite = require("gulp-svg-sprite");
 const fileInclude = require("gulp-file-include");
 
 const htmlInclude = () => {
-  return src(["app/html/*.html"]) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы
-    .pipe(
-      fileInclude({
-        prefix: "@",
-        basepath: "@file",
-      })
-    )
-    .pipe(dest("app")) // указываем, в какую папку поместить готовый файл html
+  return src(['app/html/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы													
+    .pipe(fileInclude({
+      prefix: '@',
+      basepath: '@file',
+    }))
+    .pipe(dest('app')) // указываем, в какую папку поместить готовый файл html
     .pipe(browserSync.stream());
-};
+}
 
 function scripts() {
   return src([
