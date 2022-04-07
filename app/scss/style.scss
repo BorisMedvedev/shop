@@ -111,6 +111,7 @@
 
 .footer-top {
   display: flex;
+  flex-wrap: wrap;
   padding: 70px 0 40px;
   border-bottom: 1px solid #ececec;
 
@@ -413,6 +414,7 @@
 
   &__info-list-item {
     padding: 60px 40px;
+    margin-bottom: 20px;
     max-width: 370px;
     background-color: #fff;
     box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
@@ -919,6 +921,7 @@
   }
 
   &__item {
+    margin-bottom: 20px;
     &--decor {
       position: relative;
 
