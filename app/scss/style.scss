@@ -15,9 +15,6 @@
 }
 
 .menu {
-  @include r(968) {
-    display: none;
-  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -47,18 +44,9 @@
   }
 }
 
-.title {
-  @include r(440) {
-    font-size: 32px;
-  }
-}
-
 .user-nav {
   display: flex;
   padding-right: 14px;
-  @include r(440) {
-    display: none;
-  }
 
   &__link {
     position: relative;
@@ -422,9 +410,6 @@
       filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
         brightness(98%) contrast(111%);
       z-index: -1;
-      @include r(440) {
-        left: 0;
-      }
     }
   }
 
@@ -536,13 +521,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
-    @include r(1024) {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 20px;
-    }
   }
 
   &__item {
@@ -940,14 +918,12 @@
       filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
         brightness(98%) contrast(111%);
       z-index: -1;
-      @include r(440) {
-        left: 0;
-      }
     }
   }
 
   &__item {
     margin-bottom: 20px;
+
     &--decor {
       position: relative;
 
@@ -965,9 +941,6 @@
         filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
           brightness(98%) contrast(111%);
         z-index: -1;
-        @include r(440) {
-          right: 0;
-        }
       }
     }
 
@@ -1097,6 +1070,7 @@
 
 .top {
   padding: 0 0 120px;
+
   &__container {
     padding: 136px 0;
     max-width: 1700px;
@@ -1105,7 +1079,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 120px;
   }
 }
 
@@ -1125,6 +1098,7 @@
     &:last-child {
       color: $accent;
     }
+
     &:not(:last-child)::after {
       content: "";
       position: absolute;
@@ -1169,6 +1143,7 @@
 
 .registration {
   text-align: center;
+
   &__tabs-btn {
     font-size: 22px;
     font-family: "roboto", sans-serif;
@@ -1176,6 +1151,7 @@
     line-height: 1.2;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
+
     &:not(:last-child) {
       margin-right: 60px;
     }
@@ -1184,12 +1160,14 @@
   &__tabs {
     margin-bottom: 60px;
   }
+
   .registration__tabs-btn.tab--active {
     font-weight: 500;
     color: $accent;
     border-color: $accent;
   }
 }
+
 .form-enter {
   margin: 0 auto;
   max-width: 570px;
@@ -1205,10 +1183,12 @@
     width: 100%;
     margin-bottom: 30px;
   }
+
   &__span {
     display: block;
     margin-bottom: 10px;
   }
+
   &__input {
     padding: 15px;
     width: 100%;
@@ -1216,13 +1196,16 @@
     background-color: $bg;
     border: none;
   }
+
   &__checkbox {
     display: flex;
     align-items: baseline;
   }
+
   &__check-span {
     margin: 0 0 25px 15px;
   }
+
   &__btn {
     width: 100%;
     margin-bottom: 25px;
@@ -1233,8 +1216,36 @@
   }
 }
 
-.title {
-  @include r(440) {
-    font-size: 36px;
+.shop {
+  padding-bottom: 120px;
+
+  &__inner {
+    display: flex;
+  }
+}
+
+.filter-shop {
+  max-width: 370px;
+  width: 100%;
+
+  &__list {
+    margin-right: 30px;
+  }
+
+  &__item {
+    padding: 40px 30px;
+    border: 1px solid $border;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-family: "roboto", sans-serif;
+    color: $title;
+    text-transform: uppercase;
+    line-height: 1.2;
   }
 }
