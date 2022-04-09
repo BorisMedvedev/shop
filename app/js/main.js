@@ -83,7 +83,87 @@ $(function () {
 
   });
 
+  var $range = $(".js-range-slider");
+  var $inputFrom = $(".js-range-slider2");
+  var $inputTo = $(".js-range-slider3");
+  var instance;
+  var min = 0;
+  var max = 9999;
+  var from = 0;
+  var to = 0;
+
+  $range.ionRangeSlider({
+    skin: "round",
+
+    type: "double",
+    min: min,
+    max: max,
+    from: 1000,
+    to: 6500,
+    onStart: updateInputs,
+    onChange: updateInputs,
+    onFinish: updateInputs
+  });
+  instance = $range.data("ionRangeSlider");
+
+  function updateInputs(data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);
+  }
+
+  $inputFrom.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+    } else if (val > to) {
+      val = to;
+    }
+
+    instance.update({
+      from: val
+    });
+
+    $(this).prop("value", val);
+
+  });
+
+  $inputTo.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+      val = from;
+    } else if (val > max) {
+      val = max;
+    }
+
+    instance.update({
+      to: val
+    });
+
+    $(this).prop("value", val);
+  });
+
+
+  $(function () {
+
+    $('input, select').styler();
+
+  });
+
+
+
 });
+
+
+
+
+
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());

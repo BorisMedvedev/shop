@@ -108,70 +108,124 @@
 </section>
 
   <section class="shop">
-
   <div class="container">
-
     <div class="shop__inner">
 
       <aside class="shop__filter filter-shop">
-        <form action="" class="filter-shop__form">
+
+        <form class="filter-shop__form">
           <ul class="filter-shop__list list-reset">
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                search
-              </div>
+              <div class="filter-shop__item-title">search</div>
               <label class="filter-shop__label">
-                <input class="filter-shop__input" type="text">
+                <input class="filter-shop__input" type="text" />
                 <button class="filter-shop__btn btn-accent"></button>
               </label>
-
             </li>
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                price filter
+              <div class="filter-shop__item-title">price filter</div>
+              <input type="text" class="js-range-slider" name="my_range" value="" />
+
+              <div class="filter-shop__item-box">
+                <span>Price:</span>
+                <label for="">
+                  <span>$</span>
+                  <input type="text" class="js-range-slider2" name="my_range" value="" />
+                </label>
+                <label for="">
+                  <span>$</span>
+                  <input type="text" class="js-range-slider3" name="my_range" value="" />
+                </label>
+                <button class="filter-shop__item-btn btn-accent">filter</button>
               </div>
 
             </li>
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                color filter
-              </div>
+              <div class="filter-shop__item-title">color filter</div>
 
+              <ul class="filter-color list-reset">
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Blue <span>(15)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--blue fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Red <span>(09)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--red fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Green <span>(28)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--green fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Orange <span>(09)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--orange fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Black <span>(21)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--black fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+                <li class="filter-color__item">
+                  <label class="filter-color__label">
+                    <div>
+                      <p>Purple <span>(09)</span></p>
+                    </div>
+                    <input class="filter-color__input filter-color__input--purple fiter-sryles" type="checkbox" checked>
+                  </label>
+                </li>
+
+              </ul>
             </li>
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                size filter
-              </div>
-
+              <div class="filter-shop__item-title">size filter</div>
             </li>
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                category
-              </div>
-
+              <div class="filter-shop__item-title">category</div>
             </li>
 
             <li class="filter-shop__item">
-              <div class="filter-shop__item-title">
-                popular tags
-              </div>
-
+              <div class="filter-shop__item-title">popular tags</div>
             </li>
-
-
-
           </ul>
         </form>
+
       </aside>
 
       <div class="shop__content">
+        <div class="shop__content-sorting">
+          jkjkj
+        </div>
         <ul class="shop__catalog catalog list-reset">
-
           <li class="catalog__item">
             <article class="catalog__item-card product-card">
               <span class="badge-discount badge-discount__active">sale</span>
@@ -393,14 +447,10 @@
               </div>
             </article>
           </li>
-
         </ul>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
 

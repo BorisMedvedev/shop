@@ -45,7 +45,6 @@ address {
   background-color: transparent;
   border: transparent;
   color: inherit;
-  cursor: pointer;
 }
 
 .list-reset {
@@ -151,6 +150,7 @@ address {
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.1);
   transition: background-color 0.2s, border-color 0.2s, color 0.2s,
     box-shadow 0.2s;
+  cursor: pointer;
 
   &:hover {
     background-color: #fff;
