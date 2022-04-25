@@ -1419,4 +1419,51 @@
     background: #923899;
     border: none;
   }
+
+  &__input-small {
+    display: inline-block;
+  }
+
+
+  &__label-size {
+    cursor: pointer;
+
+    .jq-checkbox,
+    .jq-radio {
+      vertical-align: -4px;
+      width: 20px;
+      height: 20px;
+      margin: 0 4px 0 0;
+      border: 1px solid $default;
+      border-radius: 50px;
+      background: transparent;
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+
+    .jq-checkbox.checked {
+      border: 1px solid $accent;
+    }
+
+    .jq-checkbox.checked .jq-checkbox__div {
+      width: 10px;
+      height: 5px;
+      margin: 5px 0 0 4px;
+      border-bottom: 1px solid $accent;
+      border-left: 1px solid $accent;
+      transform: rotate(-50deg);
+    }
+
+    .jq-checkbox.filter-color__input-size.checked~.filter-color__input-small {
+      color: $accent;
+    }
+
+  }
+
+  &__label-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
