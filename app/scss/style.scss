@@ -59,8 +59,7 @@
     transition: filter 0.2s;
 
     &:hover {
-      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
-        brightness(100%) contrast(101%);
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg) brightness(100%) contrast(101%);
     }
 
     &--active {
@@ -391,8 +390,7 @@
       background-image: url("../images/sprite.svg#decor1");
       background-repeat: no-repeat;
       background-size: cover;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-        brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
       z-index: -1;
     }
 
@@ -407,8 +405,7 @@
       background-image: url("../images/sprite.svg#decor2");
       background-repeat: no-repeat;
       background-size: cover;
-      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
-        brightness(98%) contrast(111%);
+      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg) brightness(98%) contrast(111%);
       z-index: -1;
     }
   }
@@ -442,8 +439,7 @@
         background-image: url("../images/sprite.svg#avto-icon");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg)
-          brightness(103%) contrast(102%);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg) brightness(103%) contrast(102%);
       }
     }
 
@@ -462,8 +458,7 @@
         background-image: url("../images/sprite.svg#dayicon");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg)
-          brightness(103%) contrast(102%);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg) brightness(103%) contrast(102%);
       }
     }
 
@@ -915,8 +910,7 @@
       background-image: url("../images/sprite.svg#decor3");
       background-repeat: no-repeat;
       background-size: cover;
-      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
-        brightness(98%) contrast(111%);
+      filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg) brightness(98%) contrast(111%);
       z-index: -1;
     }
   }
@@ -938,8 +932,7 @@
         background-image: url("../images/sprite.svg#decor2");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg)
-          brightness(98%) contrast(111%);
+        filter: invert(41%) sepia(38%) saturate(4158%) hue-rotate(327deg) brightness(98%) contrast(111%);
         z-index: -1;
       }
     }
@@ -956,8 +949,7 @@
         background-image: url("../images/sprite.svg#decor4");
         background-repeat: no-repeat;
         background-size: cover;
-        filter: invert(61%) sepia(84%) saturate(951%) hue-rotate(166deg)
-          brightness(99%) contrast(104%);
+        filter: invert(61%) sepia(84%) saturate(951%) hue-rotate(166deg) brightness(99%) contrast(104%);
         z-index: -1;
       }
     }
@@ -995,14 +987,12 @@
       background-repeat: no-repeat;
       background-image: url("../images/sprite.svg#user");
       background-size: contain;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-        brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
       transition: filter 0.2s, color 0.2s;
     }
 
     &:hover::before {
-      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
-        brightness(100%) contrast(101%);
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg) brightness(100%) contrast(101%);
     }
 
     &--date::before {
@@ -1015,8 +1005,7 @@
       background-repeat: no-repeat;
       background-image: url("../images/sprite.svg#blog-clock");
       background-size: contain;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-        brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
     }
   }
 
@@ -1052,8 +1041,7 @@
       background-repeat: no-repeat;
       background-image: url("../images/sprite.svg#arrow");
       background-size: contain;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-        brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
       transition: filter 0.2s, color 0.2s;
     }
 
@@ -1062,8 +1050,7 @@
     }
 
     &:hover::after {
-      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg)
-        brightness(100%) contrast(101%);
+      filter: invert(36%) sepia(39%) saturate(3531%) hue-rotate(329deg) brightness(100%) contrast(101%);
     }
   }
 }
@@ -1110,8 +1097,7 @@
       background-repeat: no-repeat;
       background-image: url("../images/sprite.svg#angle_right");
       background-size: contain;
-      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-        brightness(101%) contrast(102%);
+      filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
       transition: filter 0.2s, color 0.2s;
     }
   }
@@ -1133,8 +1119,7 @@
         background-repeat: no-repeat;
         background-image: url("../images/sprite.svg#home_icon");
         background-size: contain;
-        filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg)
-          brightness(101%) contrast(102%);
+        filter: invert(63%) sepia(93%) saturate(365%) hue-rotate(351deg) brightness(101%) contrast(102%);
         transition: filter 0.2s, color 0.2s;
       }
     }
@@ -1250,6 +1235,8 @@
     line-height: 1.2;
   }
 
+
+
   &__item-box {
     display: flex;
     align-items: center;
@@ -1271,6 +1258,48 @@
         margin-right: -3px;
       }
     }
+  }
+
+  &__label-search {
+    position: relative;
+  }
+
+  &__input-search {
+    padding: 18px;
+    height: 50px;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  &__btn-search {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-image: url("../images/sprite.svg#search");
+      filter: invert(100%) sepia(0%) saturate(3570%) hue-rotate(187deg) brightness(112%) contrast(100%);
+      z-index: 999;
+      transition: filter 0.2s;
+    }
+
+    &:hover::before {
+      background-image: url("../images/sprite.svg#search");
+      filter: invert(7%) sepia(1%) saturate(758%) hue-rotate(316deg) brightness(83%) contrast(88%);
+    }
+
+
+
   }
 
   &__item-btn {
@@ -1356,6 +1385,7 @@
     border-radius: 0;
     box-shadow: none;
   }
+
   .jq-checkbox__div {
     display: none;
   }
@@ -1364,22 +1394,27 @@
     background: #00aeef;
     border: none;
   }
+
   .filter-color__input--red.jq-checkbox.checked {
     background: #f52574;
     border: none;
   }
+
   .filter-color__input--green.jq-checkbox.checked {
     background: #24d4ac;
     border: none;
   }
+
   .filter-color__input--orange.jq-checkbox.checked {
     background: #ff7e00;
     border: none;
   }
+
   .filter-color__input--black.jq-checkbox.checked {
     background: #000;
     border: none;
   }
+
   .filter-color__input--purple.jq-checkbox.checked {
     background: #923899;
     border: none;
